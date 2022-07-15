@@ -306,7 +306,6 @@ hr {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .footer-logo img {
   width: 100px;

@@ -191,7 +191,7 @@
           <div class="footer-info">
             <div class="copyright-text">
               <small>support@xypo.com</small><br>
-              <small>copright 2021 Robin</small>
+              <small>Copyright &copy; <span id="current-year"></span><br> Christine Robinson</small>
             </div>
             <div class="footer-logo">
               <img src="./images/logo.png" alt="logo">
@@ -209,8 +209,9 @@
       <img src="./images/linkedin.png" title="LinkedIn">
     </div>
     <script>
-      var menuBtn = document.querySelector( "#menuBtn" );
-      var sideNav = document.querySelector( "#sideNav" );
+      let currentYear = document.getElementById( 'current-year' );
+      let menuBtn = document.querySelector( "#menuBtn" );
+      let sideNav = document.querySelector( "#sideNav" );
 
       sideNav.style.right = "-250px";
 
@@ -221,6 +222,8 @@
           sideNav.style.right = "-250px";
         }
       }
+
+      currentYear.innerHTML = new Date().getFullYear();
     </script>
   </body>
 
